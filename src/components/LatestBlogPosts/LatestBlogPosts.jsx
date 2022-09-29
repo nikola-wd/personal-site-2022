@@ -6,7 +6,7 @@ import './latestblogposts.scss';
 const LatestBlogPosts = () => {
   const { postsData, error } = useFetchPosts();
 
-  const CardTag = !postsData.fetchedInitial ? 'button' : 'a';
+  const CardTag = !postsData.fetched ? 'button' : 'a';
 
   return !error ? (
     <section className="latest-blog-posts">
@@ -18,7 +18,7 @@ const LatestBlogPosts = () => {
               <CardTag key={post.id} className="card" {...post.attrs}>
                 <div className="card__image-wrap-outer">
                   <div className="card__image-wrap">
-                    {postsData.fetchedFinal ? (
+                    {postsData.fetched ? (
                       <img
                         src={post.mediaSRC}
                         alt={`Webredone blog post ${post.id + 1}`}
