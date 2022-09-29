@@ -17,8 +17,9 @@ const WhoAmI = () => {
         </p>
         <p className="sec-body">
           Lately, I've been developing custom WordPress themes based on{' '}
-          <strong>Gutenberg blocks</strong>, via the framework I developed to
-          standardize and speed up the process.
+          <strong>Gutenberg blocks</strong>, via the{' '}
+          <a href="https://webredone.com/theme-redone/">framework</a> I
+          developed to standardize and speed up the process.
         </p>
       </div>
     </section>
