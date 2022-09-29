@@ -12,7 +12,7 @@ const Header = () => {
       <div className="brand">
         <span>Nikola Ivanov</span>
       </div>
-      <small>- note: this website is still not finished -</small>
+      <small>- note: this website is still not finished... -</small>
       <div className="header__links">
         <a href="mailto:contact@webredone.com">
           <Email />
