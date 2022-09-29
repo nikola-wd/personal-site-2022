@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 25px;
+  padding-bottom: 0;
+
+  .brand {
+    display: inline-flex;
+    position: relative;
+    font-weight: 600;
+    color: #222;
+    margin-right: 30px;
+    &:before {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: -4px;
+      height: calc(100% + 8px);
+      width: 50px;
+      background: #f2edf5;
+    }
+    span {
+      position: relative;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      margin-left: 5px;
+
+      svg {
+        max-width: 22px;
+        max-height: 23px;
+      }
+    }
+  }
+}
