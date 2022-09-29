@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import LatestBlogPosts from '../../components/LatestBlogPosts/LatestBlogPosts';
 import WorkWithMe from '../../components/WorkWithMe/WorkWithMe';
@@ -17,6 +18,7 @@ const Home = () => {
         <WorkWithMe />
         <LatestBlogPosts />
       </main>
+      <Footer />
     </>
   );
 };
