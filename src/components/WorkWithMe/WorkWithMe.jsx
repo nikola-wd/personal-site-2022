@@ -1,8 +1,11 @@
 import React from 'react';
+import useGAEventTracker from '../../hooks/useGAEventTracker';
 
 import './workwithme.scss';
 
 const WorkWithMe = () => {
+  const gaEventTracker = useGAEventTracker('Redirect');
+
   return (
     <section className="work-with-me">
       <div className="container">
@@ -20,7 +23,11 @@ const WorkWithMe = () => {
           working with us :)
         </p>
 
-        <a className="main-cta" href="https://webredone.com">
+        <a
+          className="main-cta"
+          href="https://webredone.com"
+          onClick={() => gaEventTracker('webredone')}
+        >
           webredone
         </a>
       </div>
