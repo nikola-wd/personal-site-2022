@@ -10,7 +10,7 @@ const Codeable = () => {
     >
       <path
         fill="#FFB199"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M6.636 6.636L.272 13 13 25.728 25.728 13l-6.364-6.364L13 13z"
       />
     </svg>
